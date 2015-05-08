@@ -10,16 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var label: UILabel!
+
+    @IBAction func tappedRed(sender: AnyObject) {
+        label.text = "Tapped Red"
+        performSegueWithIdentifier("ShowColor", sender: UIColor.redColor())
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func tappedGreen(sender: AnyObject) {
+        label.text = "Tapped Green"
+        performSegueWithIdentifier("ShowColor", sender: UIColor.greenColor())
     }
 
+    @IBAction func tappedBlue(sender: AnyObject) {
+        label.text = "Tapped Blue"
+        performSegueWithIdentifier("ShowColor", sender: UIColor.blueColor())
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowColor" {
+            if let colorViewController = segue.destinationViewController as? ColorViewController {
+                colorViewController.color = sender as? UIColor
+            }
+        }
+    }
 
 }
 

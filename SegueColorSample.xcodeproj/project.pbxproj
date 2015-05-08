@@ -13,6 +13,7 @@
 		2F94B6331AFD544000150632 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F94B6321AFD544000150632 /* Images.xcassets */; };
 		2F94B6361AFD544000150632 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F94B6341AFD544000150632 /* LaunchScreen.xib */; };
 		2F94B6421AFD544000150632 /* SegueColorSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94B6411AFD544000150632 /* SegueColorSampleTests.swift */; };
+		2F94B64C1AFD551D00150632 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94B64B1AFD551D00150632 /* ColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2F94B63B1AFD544000150632 /* SegueColorSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SegueColorSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F94B6401AFD544000150632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F94B6411AFD544000150632 /* SegueColorSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueColorSampleTests.swift; sourceTree = "<group>"; };
+		2F94B64B1AFD551D00150632 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				2F94B62B1AFD544000150632 /* AppDelegate.swift */,
 				2F94B62D1AFD544000150632 /* ViewController.swift */,
+				2F94B64B1AFD551D00150632 /* ColorViewController.swift */,
 				2F94B62F1AFD544000150632 /* Main.storyboard */,
 				2F94B6321AFD544000150632 /* Images.xcassets */,
 				2F94B6341AFD544000150632 /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F94B62E1AFD544000150632 /* ViewController.swift in Sources */,
+				2F94B64C1AFD551D00150632 /* ColorViewController.swift in Sources */,
 				2F94B62C1AFD544000150632 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
